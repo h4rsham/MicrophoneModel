@@ -12,7 +12,7 @@ A simple and responsive Web Application, mainly created for the exploration of a
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/en/) (>= 19.9.0)
-- [Yarn](https://yarnpkg.com/en/docs/install) (>= 1.2.0)
+- [NPM](https://docs.npmjs.com/cli/v9/commands/npm-install) (>= 9.6.3)
 
 ### Installing
 
