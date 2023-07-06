@@ -1,4 +1,4 @@
-# Three.js Experimentation ⌚️
+# Three.js Mic Model Experimentation 🎙️
 
 ## Description
 
