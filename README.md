@@ -46,7 +46,7 @@ You may also see any lint errors in the console.
 
 ## Future Improvements
 
-- Create background to simulate natural lighting as opposed to simple rendered in light sources
+- Create a environment background to simulate natural lighting as opposed to simply creating unnatural light sources
 
 - Loading screen
 
