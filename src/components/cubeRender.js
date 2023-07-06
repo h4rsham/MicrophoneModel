@@ -61,6 +61,7 @@ camera.position.z = objToRender === "microphoneGLTF" ? 5 : 10;
 // scene.add(rightLight);
 // scene.add(ambientLight);
 
+// light positions for the scene
 const lightPositions = [
   [15, 15, 15],
   [-15, 15, 15],
@@ -79,25 +80,31 @@ const lightPositions = [
   [-15, 0, -15],
 ];
 
+// this is used to create the lights
 const lights = [];
 
+const colour = '#fffaed'
+// iterate through the light positions and create the lights
 lightPositions.forEach((position) => {
-  const light = new THREE.DirectionalLight(0xffffff, 0.2);
+  const light = new THREE.DirectionalLight(colour, 0.2);
   light.position.set(position[0], position[1], position[2]);
   lights.push(light);
 });
 
+// add the lights to the scene
 lights.forEach((light) => {
   scene.add(light);
 });
 
+// ambient lighting
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
 scene.add(ambientLight);
 
-// this is used to make the model look more realistic
+// this is used to make the model look more realistic by setting pixel ratio to the device pixel ratio
 renderer.setPixelRatio(window.devicePixelRatio);
 
-if (objToRender === "microphoneGLTF") {
+// this is used to control the camera
+if (objToRender === "microphoneGLTF") { // this is used to see if the model is the microphone model
   controls = new OrbitControls(camera, renderer.domElement);
 }
 
