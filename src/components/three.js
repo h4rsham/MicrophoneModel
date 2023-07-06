@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function threeJsComponent() {
+export default function ThreeJsComponent() {
   return (
     <div>
       <h1>Three.js Component</h1>
