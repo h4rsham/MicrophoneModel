@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import ThreeJsComponent from "./components/three";
 import Animate from "./components/cubeRender";
